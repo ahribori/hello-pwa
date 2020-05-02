@@ -2,7 +2,7 @@ self.addEventListener('install', event => {
   console.log('install', event);
   event.waitUntil(
     caches.open('v1').then(cache => {
-      return cache.addAll(['/images/ryan.jpg']);
+      return cache.addAll(['js/main.js', '/images/ryan.jpg']);
     }),
   );
 });

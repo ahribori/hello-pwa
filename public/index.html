@@ -5,12 +5,20 @@
     <title>Hello, PWA!</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="manifest" href="manifest.json">
-    <script src="js/main.js"></script>
+    <style>
+        .add-button {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+        }
+    </style>
 </head>
 <body>
 <img src="images/ryan.jpg" />
 <div>
     <button id="notification_trigger">Notification Test</button>
+    <button class="add-button">Add to home screen</button>
+    <script src="js/main.js"></script>
 </div>
 </body>
 </html>
